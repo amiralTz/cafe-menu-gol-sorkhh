@@ -3,55 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <title>منوی کافه</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <style>
         body {
             font-family: Tahoma, sans-serif;
             background-color: #fff8f0;
             text-align: center;
-            padding: 20px;
             margin: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
         }
+
         h1 {
             color: #d2691e;
-            margin-bottom: 30px;
+            margin: 25px 0;
+            font-size: 26px;
         }
+
         .categories {
             display: flex;
             justify-content: space-around;
             flex-wrap: wrap;
+            flex: 1;
         }
+
         .categories a {
             text-decoration: none;
             color: #333;
-            margin: 10px;
+            margin: 12px;
             text-align: center;
         }
+
         .categories img {
-            width: 200px;
-            height: 200px;
-            border-radius: 15px;
-        }
-        .categories div {
-            margin-top: 5px;
-            font-weight: bold;
-            font-size: 18px;
+            width: 170px;   /* کمی بزرگ‌تر */
+            height: 170px;
+            border-radius: 18px;
         }
 
-        /* بخش نارنجی پایین */
+        .categories div {
+            margin-top: 8px;
+            font-weight: bold;
+            font-size: 18px; /* متن بزرگ‌تر */
+        }
+
+        /* کادر نارنجی پایین صفحه */
         .footer {
             background-color: #ff8c42;
-            margin-top: 50px;
-            padding: 40px 20px;
-            border-top-left-radius: 80px;
-            border-top-right-radius: 80px;
+            padding: 35px 20px;
+            border-top-left-radius: 70px;
+            border-top-right-radius: 70px;
             color: #ffffff;
         }
+
         .footer h2 {
-            margin-bottom: 15px;
+            margin-bottom: 12px;
+            font-size: 20px;
         }
+
         .footer p {
-            margin: 8px 0;
-            font-size: 16px;
+            margin: 6px 0;
+            font-size: 15px;
+        }
+
+        /* تنظیم مخصوص موبایل */
+        @media (max-width: 600px) {
+            .categories img {
+                width: 150px;
+                height: 150px;
+            }
+
+            .categories div {
+                font-size: 17px;
+            }
         }
     </style>
 </head>
@@ -62,30 +87,30 @@
 
     <div class="categories">
         <a href="hot.html">
-            <img src="images/hot.jpg" alt="نوشیدنی گرم">
+            <img src="images/hot.jpg">
             <div>نوشیدنی گرم</div>
         </a>
 
         <a href="ice.html">
-            <img src="images/ice.jpg" alt="نوشیدنی سرد">
+            <img src="images/ice.jpg">
             <div>نوشیدنی سرد</div>
         </a>
 
         <a href="salad.html">
-            <img src="images/salad.jpg" alt="سالاد">
+            <img src="images/salad.jpg">
             <div>سالاد</div>
         </a>
 
         <a href="cake.html">
-            <img src="images/imagescakes.jpg.jpg" alt="کیک">
+            <img src="images/imagescakes.jpg.jpg">
             <div>کیک</div>
         </a>
     </div>
 
-    <!-- بخش تشکر و اطلاعات -->
+    <!-- کادر نارنجی چسبیده به پایین -->
     <div class="footer">
-        <h2>از انتخاب شما متشکریم ☕</h2>
-        <p>خوشحالیم که کافه ما را برای لحظات خوش خود انتخاب کرده‌اید</p>
+        <h2>☕ از انتخاب شما متشکریم</h2>
+        <p>باعث افتخار ماست که کافه‌مان را برای لحظات خود انتخاب کرده‌اید</p>
         <p>📍 آدرس: خیابان مثال، کوچه آرامش، پلاک ۱۲</p>
         <p>📞 تلفن: ۰۹۱۲۳۴۵۶۷۸۹</p>
         <p>📷 اینستاگرام: @CafeMenuExample</p>

@@ -3,6 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <title>نوشیدنی‌های گرم</title>
+
+    <!-- برای درست نمایش دادن در موبایل -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <style>
         body { 
             font-family: Tahoma, sans-serif; 
@@ -11,7 +15,12 @@
             text-align: center; 
             padding: 20px; 
         }
-        h1 { color: #FFD700; margin-bottom: 30px; } /* طلایی/زرد */
+
+        h1 { 
+            color: #FFD700; 
+            margin-bottom: 30px; 
+        } /* طلایی/زرد */
+
         .item { 
             margin: 20px 0; 
             padding: 10px; 
@@ -19,9 +28,15 @@
             border-radius: 15px; 
             background-color: #222; 
         }
-        .item img { width: 250px; border-radius: 15px; }
+
+        .item img { 
+            width: 250px; 
+            border-radius: 15px; 
+        }
+
         .item h2 { color: #FFD700; }
         .item p { margin: 5px 0; }
+
         .back-btn { 
             display: inline-block; 
             margin-top: 20px; 
@@ -32,10 +47,49 @@
             text-decoration: none; 
             font-weight: bold; 
         }
+
         .back-btn:hover { background-color: #FFC200; }
+
+        /* ===== تنظیم مخصوص موبایل (فقط اندازه‌ها) ===== */
+        @media (max-width: 600px) {
+
+            body {
+                padding: 25px;
+            }
+
+            h1 {
+                font-size: 32px;
+            }
+
+            .item {
+                padding: 20px;
+                margin: 25px 0;
+            }
+
+            .item img {
+                width: 90%;
+                max-width: 340px;
+            }
+
+            .item h2 {
+                font-size: 24px;
+            }
+
+            .item p {
+                font-size: 18px;
+                line-height: 1.8;
+            }
+
+            .back-btn {
+                font-size: 20px;
+                padding: 15px 30px;
+            }
+        }
     </style>
 </head>
+
 <body>
+
     <h1>نوشیدنی‌های گرم</h1>
 
     <div class="item">
@@ -74,6 +128,6 @@
     </div>
 
     <a href="index.html" class="back-btn">برگشت به دسته‌بندی‌ها</a>
-</body>
 
+</body>
 </html>
